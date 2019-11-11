@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home | Search Images Using Flickr API</title>
+  <script src="https://kit.fontawesome.com/7700e0d7d8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="loader">
+    <div id="spinner"></div>
+  </div>
+  <!-- Light box -->
+  <div id="light-box">
+    <span id="close-btn">&times;</span>
+    <div>
+      <img src="" />
+      <p id="title"></p>
+    </div>
+  </div>
+  <section id="header-container">
+    <form>
+      <h1>Flickr API</h1>
+      <p>Use this web app to search for images</p>
+      <div id="search-box">
+        <input type="text" placeholder="Search photo" />
+        <select id="per-page">
+          <option value="20">20 photos</option>
+          <option value="30">30 photos</option>
+          <option value="40">40 photos</option>
+          <option value="50">50 photos</option>
+          <option value="100">100 photos</option>
+        </select>
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+    </form>
+  </section>
+  <section id="image-content"></section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
